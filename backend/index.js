@@ -20,6 +20,7 @@ app.use('/api', patentsRoute);
 
 // Start the cron jobs
 require('./notify/cronJobs');
+console.log("Hello");
 
 // Start the server
 const PORT = process.env.PORT || 5000;
