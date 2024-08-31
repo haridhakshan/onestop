@@ -18,27 +18,40 @@ const Home = () => {
           <Link to="/feed" className="linkcls">Feedback</Link>
           </div>
           <div className="navdiv2">
-            <Link to="/profile"  className="linkcls">Profile </Link>
+            <Link to="/profile"  className="linkcls"><CgProfile/> </Link>
           </div>
         </nav>
-        <div className='anime'>
-        <div className='box'>
-          
 
-          <span style={{"--i":1}}><img src='https://tse4.mm.bing.net/th?id=OIP.umsvcWZtJRmz1_Sf25L0ewHaKe&pid=Api&P=0&h=180'></img></span>
-          <span style={{"--i":2}}><img src='https://tse2.mm.bing.net/th?id=OIP.Or9QcYrYzjkoCxYjXSIYSAHaJ1&pid=Api&P=0&h=180'></img></span>
-          <span style={{"--i":3}}><img src='https://tse1.mm.bing.net/th?id=OIP._nz_26eT6Hev7jYfMa9_NgHaJx&pid=Api&P=0&h=180'></img></span>
-          <span style={{"--i":4}}><img src='https://tse1.mm.bing.net/th?id=OIP.Z51RiOI2ulKBbWYWg8RgUwHaKV&pid=Api&P=0&h=180'></img></span>
-          <span style={{"--i":5}}><img src='https://tse3.mm.bing.net/th?id=OIP.m1sI3bPm3Xi7QLd22nL43wHaJ_&pid=Api&P=0&h=180'></img></span>
-          <span style={{"--i":6}}><img src='https://tse3.mm.bing.net/th?id=OIP.KrDxOdOdMCVzFsh4F0NfrQHaKe&pid=Api&P=0&h=180'></img></span>
-          <span style={{"--i":7}}><img src='https://tse1.mm.bing.net/th?id=OIP.a815FFuLC6uohjG89g0dXQHaJp&pid=Api&P=0&h=180'></img></span>
-          <span style={{"--i":8}}><img src='https://tse4.mm.bing.net/th?id=OIP.dse2DoE2ttYYeFKfLJuVfgHaJp&pid=Api&P=0&h=180'></img></span>
-          
+        <div className='body'>
+  <div className='slider'>
+    <div className='list'>
+      <img src='https://i.pinimg.com/236x/34/e8/ce/34e8ce395afc5d96d932b9a6ddd61019.jpg' alt='Success of Elon Musk' />
+      <div className='info'>
+        <h1>Heading</h1>
+        <p>Success of Elon Musk</p>
+        <Link to='/journal1' className='button'>Read More</Link>
+      </div>
+    </div>
+    <div className='list'>
+      <img src='https://i.pinimg.com/236x/0c/22/42/0c2242026e0692425392496d69399857.jpg' alt='Work Hard Get Success' />
+      <div className='info'>
+        <h1>Heading</h1>
+        <p>Work hard, get success</p>
+        <Link to='/journal1' className='button'>Read More</Link>
+      </div>
+    </div>
+    <div className='list'>
+      <img src='https://i.pinimg.com/236x/68/e4/ea/68e4ea80bbb65b3bc6e17015856ff6dc.jpg' alt='Work Hard Get Success' />
+      <div className='info'>
+        <h1>Heading</h1>
+        <p>Work hard, get success</p>
+        <Link to='/journal1' className='button'>Read More</Link>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
         </div>
-        </div>
-        </div>
-        </div>
-        
       </body>
     )
 }

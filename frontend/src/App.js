@@ -14,6 +14,7 @@ import Collab from "./dashboard/startups/Collab";
 import Todo from "./dashboard/startups/Todo";
 import Investor from "./dashboard/startups/Investor";
 import Chatbox from "./dashboard/startups/Chatbox";
+import Propage from "./dashboard/Profile/Propage";
 
 
 
@@ -67,6 +68,9 @@ function App() {
         </Route>
         <Route path="/chat">
         <Chatbox/>
+        </Route>
+        <Route path="/profile">
+        <Propage/>
         </Route>
         </Switch>
         </Router>

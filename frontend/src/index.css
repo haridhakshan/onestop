@@ -4,13 +4,10 @@
     font-family:"Quicksand";
     
   }
-
-  
  .super{
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 40px;
- 
   
 }
 body{
@@ -80,10 +77,28 @@ body{
   border-radius : 40px;
   font-size: 16px;
   color: black;
-
- 
- 
 } 
+.input-box1{
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  /* border: 3px solid rgba(66, 13, 130, 0.2); */
+  outline: none;
+  border-radius : 40px;
+  font-size: 16px;
+  color: black;
+  display: flex;
+} 
+.input-box1 select{
+  width: 200px;
+  height: 30px;
+  background-color: transparent;
+  border: 3px solid  rgba(225, 225, 225,.2);
+  border-radius : 40px;
+  font-size: 16px;
+  font-family: cursive;
+}
 .input-box input::placeholder{
   color:black;
   padding-left:10px;
@@ -286,9 +301,7 @@ margin: 20px 0 15px;
   color:white;
   padding-top:10px ;
   text-decoration: none;
-  text-shadow: red 0 0 25px,
-  green 0 0 10px,
-  blue 0 0 13px
+  text-shadow: red 0 0 25px
   
 }
 .navdiv1{
@@ -621,4 +634,146 @@ margin-Left:300px;
 
 .chatbox-send-button:hover {
   background-color: #128c7e;
+}
+.body {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+ 
+  width: 1536px;
+  height:672px ;
+  background-color:balck;
+  background-image:linear-gradient(black,grey);
+  justify-content: center;
+
+}
+
+.slider {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 2rem; /* Added gap for spacing between items */
+  margin: auto; /* Centers the slider on the page */
+
+}
+
+.list {
+  width: 280px;
+  height: 360px;
+  padding: 2rem 1rem;
+  background: #fff;
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease-in-out; /* Added transform property to the transition for clarity */
+  overflow: hidden; /* Ensures content stays within the card boundaries */
+  margin-top: 30px;
+}
+
+.list:hover {
+  transform: translateX(20px); /* Specified direction for translate */
+}
+
+.list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 176, 155, 0.5), rgba(150, 201, 61, 1));
+  z-index: 2;
+  transition: opacity 0.5s; /* Simplified transition property */
+  opacity: 0;
+}
+
+.list:hover::before {
+  opacity: 1;
+}
+
+.list img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.info {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s, transform 0.5s; /* Simplified transition property */
+}
+
+.list:hover .info { /* Corrected selector to match .list class */
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.info h1 {
+  margin: 0;
+}
+
+.info p {
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.button {
+  text-decoration: none; /* Fixed typo "nome" to "none" */
+  padding: 0.5rem 1rem;
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out; /* Added color transition for smoother effect */
+}
+
+.button:hover {
+  background: #000;
+  color: #fff;
+}
+.div1Profile{
+  background-image: url(/public/proimg.jpeg);
+  margin-top: 150px;
+  margin-left: 200px;
+  width: 800px;
+  height: 100px;
+  
+}
+.imgpro{
+  margin-top: -70px;
+  margin-left: 250px;
+  border-radius: 50%;
+  border:2px solid #128c7e;
+}
+.ditpro{
+  height: 500px;
+  width: 800px;
+  margin-left: 200px;
+  margin-top: -50px;
+ background-image: url(/public/Free.jpeg);
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+.det{
+  margin-left: 100px;
+  padding-top: 50px;
+}
+.detbox{
+  border-radius: 25px;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 30px;
+  width: 300px;
+  height: 30px;
+  color: #f9f9f9;
+  background-color: aquamarine;
 }

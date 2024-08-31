@@ -2,11 +2,13 @@ import React, { useState } from 'react'
 import { FaLock, FaUser,FaMailBulk } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { useHistory } from 'react-router-dom/cjs/react-router-dom'
+import Propage from '../dashboard/Profile/Propage'
 
 const Register = () => {
     const[username,setUsername] = useState("")
     const[password,setPassword] = useState("")
     const[email,setEmail]=useState("")
+    const[role,setrole]=useState("")
     const history = useHistory();
   return (
     <div className='login'>
@@ -26,7 +28,6 @@ const Register = () => {
           onChange={(e)=> setEmail(e.target.value)}
           required/>
           <FaMailBulk className="icon" />
-          
         </div>
         <div className='input-box'>
         <input type='password' placeholder='Password'
@@ -34,6 +35,16 @@ const Register = () => {
         onChange={(e) => setPassword(e.target.value)}
         required/>
         <FaLock className='icon'/>
+        </div>
+        <div className='input-box1'>
+       <h3 style={{marginLeft:"-20px"}}>Pick a Role </h3>
+      <select role='selectrole' value={role} onChange={(e)=>setrole(e.target.value)}>
+        <option></option>
+        <option >Researcher</option>
+        <option >Entrepreneur</option>
+        <option >Researcher</option>
+        <option >StartUp</option>
+      </select>
         </div>
         <div className='remember'>
         <label>
@@ -48,6 +59,7 @@ const Register = () => {
 
        </form>
     </div>
+    {/* <Propage name={username} gmail={email} password={password} role={role}/> */}
     </div>
   )
 }
